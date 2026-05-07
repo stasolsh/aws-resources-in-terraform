@@ -1,22 +1,67 @@
-Here are elementary examples of AWS resources created by Terraform
-====
+![Terraform](https://img.shields.io/badge/Terraform-IaC-purple)
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
+![DevOps](https://img.shields.io/badge/DevOps-Friendly-blue)
 
-## List of resources:
+# AWS Infrastructure as Code with Terraform
 
-1. [network](network.tf) 
-2. [ec2](ec2.tf)
-3. [rds](rds.tf)
-4. [s3](s3.tf)
-5. [sqs](sqs.tf)
-6. [sns](sns.tf)
-7. [lambda](lambda.tf)
-8. [iam](iam.tf)
-9. [dynamodb](dynamodb.tf)
-10. [cloudfront](cloudfront.tf)
-11. [autoscaling](autoscaling.tf)
-12. [loadbalancer](loadbalancer.tf)
-13. [cloudwatch](cloudwatch.tf)
-14. [ecrrepository](ecrrepository.tf)
-15. [route53](route53.tf)
-16. [ssm](ssm.tf)
+> Practical Terraform examples for provisioning and managing AWS infrastructure components used in modern cloud-native systems.
+
+This repository contains hands-on Infrastructure-as-Code examples for networking, compute, storage, monitoring, messaging, security, and scalable cloud architectures using Terraform and AWS.
+
+## Why This Repository Exists
+
+Modern backend and cloud-native systems rely heavily on Infrastructure as Code.
+
+This repository was created to:
+- practice Terraform and AWS infrastructure design
+- understand cloud architecture building blocks
+- explore infrastructure automation
+- demonstrate reusable infrastructure patterns
+- strengthen DevOps and platform engineering skills
+
+| Resource | Description |
+|---|---|
+| [VPC & Networking](vpc.tf) | Configure isolated networking environments, subnets, routing, and gateways |
+| [EC2](ec2.tf) | Provision virtual machines and compute resources |
+| [RDS](rds.tf) | Deploy managed relational databases |
+| [S3](s3.tf) | Configure scalable object storage |
+| [SQS](sqs.tf) | Create message queues for asynchronous communication |
+| [SNS](sns.tf) | Configure pub/sub messaging and notifications |
+| [Lambda](lambda.tf) | Deploy serverless compute functions |
+| [IAM](iam.tf) | Manage roles, policies, and permissions |
+| [DynamoDB](dynamodb.tf) | Provision NoSQL databases |
+| [CloudFront](cloudfront.tf) | Configure CDN and edge content delivery |
+| [Load Balancer](loadbalancer.tf) | Configure traffic distribution across services |
+| [CloudWatch](cloudwatch.tf) | Set up monitoring, metrics, and logging |
+| [ECR](ecrrepository.tf) | Manage Docker container repositories |
+| [Route53](route53.tf) | Configure DNS routing and domains |
+| [SSM](ssm.tf) | Store configuration and secrets securely |
+| [Auto Scaling](autoscaling.tf) | Configure automatic scaling policies to dynamically adjust compute capacity based on workload |
+| [CloudFront](cloudfront.tf) | Configure CDN distribution, caching, and edge content delivery for global performance optimization |
+
+## Example Cloud Architecture
+
+Internet
+↓
+CloudFront
+↓
+Load Balancer
+↓
+EC2 / Lambda
+↓
+RDS / DynamoDB
+↓
+S3 / SQS / SNS
+
+## Getting Started
+
+### Initialize Terraform
+
+```bash
+terraform init
+terraform validate
+terraform plan
+terraform apply
+```
+
 
