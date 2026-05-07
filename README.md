@@ -41,6 +41,7 @@ This repository was created to:
 
 ## Example Cloud Architecture
 
+```text
 Internet
 ↓
 CloudFront
@@ -56,6 +57,7 @@ S3 / SQS / SNS
 ## Getting Started
 
 ### Initialize Terraform
+```
 
 ```bash
 terraform init
